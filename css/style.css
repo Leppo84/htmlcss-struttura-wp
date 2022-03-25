@@ -11,19 +11,22 @@ header {
 
 main {
     width: 90%;
-    margin: 0 auto;
+    margin: 10px auto 20px auto ;
 }
 
 .splashimg {
     background-color: gold;
+    margin: 10px 0 10px 0;
 }
 
 .contents {
-    background-color: lightskyblue;
+    background-color: lightblue;
 }
 
 .container {
     background-color: blue;
+    /* border: 2px solid black; */
+    padding: 2% 0;
 }
 
 .container:after {
@@ -32,22 +35,34 @@ main {
     clear: both;
 }
 
+img {
+    max-width: 100%;
+    opacity: 60%;
+    object-fit: cover;
+}
+
+article img {
+    min-height: 150px;
+
+}
+
 article {
     float: left;
     background-color: lightskyblue;
-    height: 100px;
-    margin: 10px;
+    /* height: 100px; */
+    /* margin: 0 auto; */
 }
 
-article.columncenter {
-    margin: 5vh 5%;
-    width: 50%;
+.columncenter {
+    margin: 0 2%;
+    width: 60%;
 }
 
-article.columnleft article.columnright {
-    width: 20%;
+.columnleft, .columnright {
+    width: 18%;
 }
 
 footer {
     background-color: purple;
+    height: 60px;
 }
